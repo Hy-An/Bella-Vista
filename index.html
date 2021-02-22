@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Bella Vista</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Bella Vista (Tucumán)</h1>
+      <div class="menu">
       <ul>
         <li>Historia</li>
+        <li>Personalidades</li>
         <li>Ubicación</li>
-      </ul>
+        <li>Datos Relevantes</li>
+        <li>Contactos</li>
+      </ul></div>
     </header>
-    <main>
+    <main class="main">
       <p>
         Bella Vista es la ciudad cabecera del departamento Leales, en la
         provincia de Tucumán, Argentina. Ubicada en la zona llana de esa
@@ -24,7 +29,7 @@
         Tucumán, por la Ruta Provincial 301 (todos los mapas actuales la sitúan
         sobre la ruta nacional 157, ex Ruta Provincial 301).
       </p>
-      <section>
+      <div class="story">
         <h3>Historia</h3>
         <p>
           Antiguamente el lugar fue conocido como "Los Tres Bajos". Como muchos
@@ -144,9 +149,9 @@
           través de la desaparecida Comisión Nacional Azucarera (CONASA) que
           duró desde 1973 a 1976. En 1977 fue privatizado.
         </p>
-      </section>
+      </div>
 
-      <div>
+      <div class="celeb">
         <h3>Personalidades</h3>
         <ul>
           <li>
@@ -226,17 +231,28 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="loc">
         <h3>Ubicacion Geografica</h3>
+        <div class="map">
         <img
           src="/assets/Argentina_Tucumán_location_map.svg.png"
           alt="mapatucuman"
         />
+        <br />
+        >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19815.995362438305!2d-65.3099805204438!3d-27.031476530877917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94224e082cd47971%3A0x26c95dbbdb72df0b!2sBella%20Vista%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1614011917284!5m2!1ses-419!2sar"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
         <a
           href="http://tools.wmflabs.org/geohack/geohack.php?language=es&pagename=Bella_Vista_(Tucum%C3%A1n)&params=-27.033333333333_N_-65.3_E_type:city"
         >
           Coordenadas 27°02′00″S 65°18′00″O</a
-        >
         <h3>Barrios</h3>
         <li>Barrio Matienzo</li>
         <li>Barrio Jorge Flores</li>
@@ -279,8 +295,28 @@
           <li>Huso horario: UTC−3</li>
           <li>Código postal: T4168</li>
           <li>Prefijo telefónico: 0381</li>
+          <img src="./assets/150px-Bandera_de_la_Ciudad_de_Bella_Vista,_Tucumán_Argentina.gif" alt="BanderaBV">
+          <img src=".//assets/132px-Bella_vista2.png" alt="EscudoBV">
         </ul>
       </div>
     </main>
+    <footer class="ftr">
+      <p>Municipalidad de Bella Vista</p>
+      <p>Sarmiento y Marconi. (4168) Bella Vista. Tucumán</p>
+      <p>informes@mbvt.gob.ar</p>
+      <a href="www.mbvt.gob.ar"> Web Municipal</a>
+      <br>
+      <div class="icon">
+      <h4>Redes Sociales</h4>
+      <a href="https://www.facebook.com/Municipalidad-De-Bella-Vista-1536957066596128/">
+      <img src="./assets/face.jpg" alt="facebookIcon"></a>
+      <a href="https://twitter.com/municbellavista">
+      <img src="./assets/twitter-logo.png" alt="twitterIcon"> </a>
+      <a href="https://www.instagram.com/mbvtbellavista/">
+      <img src="./assets/instagram-.png" alt="intagramIcon"></a>
+      <a href="https://www.youtube.com/channel/UCUCVz7y0RX_cW4fCswB9rkA">
+      <img src="./assets/youtube.png" alt="YoutubeIcon"> </a>
+    </div>
+    </footer>
   </body>
 </html>
