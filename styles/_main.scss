@@ -1,4 +1,42 @@
 .main {
   background: $white;
   font-family: $PrimaryFont;
+
+  .localization {
+    .map {
+      @include position(50% 50%);
+    }
+    img {
+      width: 600px;
+      height: 600px;
+      margin: auto;
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+    iframe {
+      width: 600px;
+      height: 600px;
+      margin: auto;
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+  }
+  .data {
+    grid-template-columns: 25% 25% 25% 25%;
+
+    .graphic {
+      width: 300px;
+      height: 300px;
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+    .list {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+    .flag {
+      grid-column-start: 3;
+      grid-row-start: 1;
+    }
+  }
 }
