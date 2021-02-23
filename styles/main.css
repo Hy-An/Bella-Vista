@@ -10,7 +10,7 @@
   height: 40px;
   border-radius: 10px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
 }
 
