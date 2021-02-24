@@ -1,6 +1,7 @@
 .main {
   background: $white;
   font-family: $PrimaryFont;
+  font-size: 20px;
 
   .localization {
     .map {
@@ -22,21 +23,23 @@
     }
   }
   .data {
-    grid-template-columns: 25% 25% 25% 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
 
     .graphic {
       width: 300px;
       height: 300px;
-      grid-column-start: 1;
-      grid-row-start: 1;
+      grid-column: 1/2;
+      grid-row: 1/2;
     }
     .list {
-      grid-column-start: 2;
-      grid-row-start: 1;
+      grid-column: 2/3;
+      grid-row: 1/2;
     }
     .flag {
-      grid-column-start: 3;
-      grid-row-start: 1;
+      grid-column: 3/4;
+      grid-row: 1/2;
     }
   }
 }
