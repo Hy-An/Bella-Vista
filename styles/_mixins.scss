@@ -12,5 +12,5 @@
 
 @mixin hover($color) {
   background-color: $color;
-  color: whitesmoke;
+  color: $whitesmoke;
 }
