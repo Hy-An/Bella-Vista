@@ -3,6 +3,15 @@
   font-family: $PrimaryFont;
   font-size: 20px;
 
+  .personalities {
+    a {
+      @include links(flow);
+    }
+    a:hover {
+      @include hover($black);
+    }
+  }
+
   .localization {
     .map {
       @include position(50% 50%);
@@ -35,6 +44,12 @@
     .list {
       grid-column: 2/3;
       grid-row-start: 1;
+      a {
+        @include links(block);
+      }
+      a:hover {
+        @include hover($black);
+      }
     }
     .flag {
       grid-column: 3/4;

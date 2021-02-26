@@ -33,8 +33,7 @@
     }
 
     a:hover {
-      background-color: $magenta;
-      color: whitesmoke;
+      @include hover($magenta);
     }
   }
 }
