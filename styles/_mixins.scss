@@ -1,0 +1,16 @@
+@mixin position($row) {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: $row;
+}
+
+@mixin links($display) {
+  display: $display;
+  color: $black;
+  text-decoration: none;
+}
+
+@mixin hover($color) {
+  background-color: $color;
+  color: $whitesmoke;
+}
